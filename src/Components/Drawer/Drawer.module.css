@@ -24,25 +24,23 @@ a {
 }
 .icon {
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 25px;
   color: darkgreen;
 }
-
-/* Additional styles for hover effect */
-.item:hover {
-  background-color: #e0e0e0;
-  cursor: pointer;
-}
-
-.activeItem {
-  background-color: rgb(24, 120, 242);
-  font-weight: bold;
-}
-
-.activeItem .icon {
-  color: #ff0000; /* Change the color for active section icon */
-}
-
-.activeItem span {
-  color: #ff0000; /* Change the color for active section text */
-}
+.item.active {
+    background-color: rgb(24, 120, 242);
+    font-weight: bold;
+  }
+  
+  .item.active .icon {
+    color: #fff;
+  }
+  
+  .item.active span {
+    color: #fff; 
+  }
+  
+  .item:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }

@@ -66,15 +66,15 @@ nav div:last-child p {
 
 @keyframes greenAnimation {
   0% {
-    background-color: rgb(24, 120, 242); /* Initial background color */
+    background-color: rgb(24, 120, 242);
   }
 
   50% {
-    background-color: #00ff00; /* Green background color */
+    background-color: #00ff00; 
   }
 
   100% {
-    background-color: rgb(22, 120, 242); /* Back to initial background color */
+    background-color: rgb(22, 120, 242); 
   }
 }
 
