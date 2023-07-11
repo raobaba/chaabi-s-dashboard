@@ -1,0 +1,48 @@
+.container {
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  height: 550px;
+}
+.drawer {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Roboto", "Rubik", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: darkgreen;
+}
+
+/* Additional styles for hover effect */
+.item:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.activeItem {
+  background-color: rgb(24, 120, 242);
+  font-weight: bold;
+}
+
+.activeItem .icon {
+  color: #ff0000; /* Change the color for active section icon */
+}
+
+.activeItem span {
+  color: #ff0000; /* Change the color for active section text */
+}
