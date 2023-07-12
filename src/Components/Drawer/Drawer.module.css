@@ -1,12 +1,7 @@
-.container {
-  width: 20%;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  height: 550px;
-}
 .drawer {
   width: 80%;
   margin: auto;
+  margin-top: 30px;
   display: grid;
   grid-gap: 10px;
 }
@@ -14,33 +9,52 @@
 .item {
   display: flex;
   align-items: center;
-  background-color: #f2f2f2;
   padding: 10px;
   border-radius: 10px;
+  color: rgb(24, 120, 242);
+  font-weight: 500;
   font-family: "Roboto", "Rubik", sans-serif;
-}
-a {
   text-decoration: none;
 }
+
+.item:hover {
+  background-color: rgb(24, 120, 242);
+  cursor: pointer;
+  color: azure;
+}
+
 .icon {
   margin-right: 10px;
   font-size: 25px;
-  color: darkgreen;
+  font-weight: 900;
 }
-.item.active {
-    background-color: rgb(24, 120, 242);
-    font-weight: bold;
+
+.activeItem {
+  background-color: rgb(24, 120, 242);
+  color: azure;
+}
+
+.activeItem:hover {
+  background-color: rgb(24, 120, 242);
+  cursor: pointer;
+  color: azure;
+}
+
+.active {
+  background-color: rgb(24, 120, 242) !important;
+  color: azure !important;
+}
+
+.active .icon {
+  color: azure;
+}
+
+.active .item {
+  color: azure;
+}
+@media (max-width:873px){
+  .container{
+    display: none;
   }
-  
-  .item.active .icon {
-    color: #fff;
-  }
-  
-  .item.active span {
-    color: #fff; 
-  }
-  
-  .item:hover {
-    background-color: #e0e0e0;
-    cursor: pointer;
-  }
+}
+
